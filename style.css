@@ -1,0 +1,164 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS */
+
+/* scrolls instead of instantly going to section */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header and sections */
+h1, section {
+  height: 65rem;
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* main page header */
+h3 {
+  margin-top: -26rem;
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* top */
+.topNav {
+  height: 5rem;
+  background-color: #777777;
+}
+
+/* make hamburger icon */
+.line {
+  background-color: white;
+  margin: 7px 0;
+  width: 28px;
+  height: 2px;
+}
+
+/* hamburger icon */
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+  margin-top: 1.4rem;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 101;
+}
+
+/* nav */
+.navigation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background:#777777;
+  width: 300px;
+  overflow: hidden;
+  color: white;
+  z-index: 100;
+  transform: translateX(-100%);
+  padding-top: 5rem;
+}
+
+/* displays nav bar on hamburger click */
+.showNav {
+  transform: translateX(0);
+
+}
+
+/* nav links */
+a {
+  display: block;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2rem;
+  width: 100%;
+  padding-left: 6.5rem;
+  padding-top: 3rem;
+}
+
+/* hides nav on off click */
+.navSectionNames {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* opacity transition */
+.opacity {
+  animation-name: opacity .15s ease-in-out;
+  -webkit-animation-name: opacity;
+  animation-duration: 1s;
+  visibility: visible !important;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transition: opacity 5s ease-in-out;
+  } 
+}
